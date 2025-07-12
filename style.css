@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* Importation des polices Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@400;700&display=swap');
 
@@ -254,4 +255,235 @@ a {
     .day-name {
         font-size: 0.8em;
     }
+=======
+/* Importation des polices Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@400;700&display=swap');
+
+/* Styles Généraux */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to bottom, #1E3A5F, #2A4D7A, #3B6AA0); /* Dégradé de bleus océaniques plus doux */
+    color: #e0e0e0;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+/* En-tête */
+header {
+    background-color: #1A3047; /* Bleu foncé subtil pour l'en-tête */
+    color: #ffffff;
+    padding: 40px 20px;
+    text-align: center;
+    border-bottom: 3px solid #6DD5ED; /* Bordure bleu clair, comme un horizon */
+}
+
+header h1 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 2.8em;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px #3E7CBA; /* Ombre bleue moins prononcée */
+}
+
+header .server-name {
+    color: #9DE0F6; /* Bleu très clair, comme le reflet du ciel sur l'eau */
+}
+
+header p {
+    font-size: 1.2em;
+    font-style: italic;
+    color: #bbbbbb;
+}
+
+/* Conteneur principal */
+main {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+/* Conteneur du calendrier (pour un mois) */
+.calendar-container {
+    background-color: rgba(26, 48, 71, 0.8); /* Bleu foncé légèrement transparent */
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 50px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4); /* Ombre adoucie */
+    border: 1px solid rgba(157, 224, 246, 0.2); /* Bordure discrète */
+}
+
+.calendar-title {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 2.2em;
+    color: #6DD5ED; /* Bleu ciel pour le titre du mois */
+    text-align: center;
+    margin-bottom: 40px;
+    text-shadow: 1px 1px #3E7CBA; /* Ombre plus douce */
+    padding-bottom: 15px;
+    border-bottom: 2px dashed #6DD5ED; /* Bordure plus fine */
+}
+
+/* Grille du calendrier */
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+}
+
+.day-name {
+    font-family: 'Press Start 2P', cursive;
+    background-color: #3E7CBA; /* Bleu moyen pour les noms des jours */
+    padding: 10px 5px;
+    text-align: center;
+    font-size: 0.9em;
+    border-radius: 5px;
+    color: #ffffff;
+    text-shadow: 1px 1px #2B5A8C;
+}
+
+.day {
+    background-color: #2D527D; /* Bleu plus clair pour les jours */
+    border: 1px solid #1E3A5F;
+    border-radius: 8px;
+    min-height: 120px;
+    padding: 10px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.day.empty {
+    background-color: rgba(45, 82, 125, 0.4); /* Jours vides plus transparents */
+    border: 1px dashed rgba(30, 58, 95, 0.5);
+    visibility: visible;
+}
+
+.date-number {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1.5em;
+    color: #9DE0F6; /* Bleu très clair pour le numéro du jour */
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    z-index: 1;
+    text-shadow: 1px 1px #6DD5ED;
+}
+
+.day.has-event {
+    background-color: #3E7CBA; /* Un bleu légèrement différent quand il y a un événement */
+    border: 1px solid #6DD5ED; /* Bordure bleu ciel pour les jours avec événement */
+    box-shadow: 0 0 10px rgba(109, 213, 237, 0.2); /* Légère lueur adoucie */
+}
+
+.event-details {
+    margin-top: 30px;
+    font-size: 0.9em;
+    width: 100%;
+    overflow-y: auto;
+    max-height: calc(100% - 40px);
+    padding-right: 5px;
+}
+
+.event-details p {
+    margin: 5px 0;
+    color: #cccccc;
+    line-height: 1.3;
+}
+
+/* Tags d'événements (couleurs ajustées pour le thème subtil) */
+.event-tag {
+    display: inline-block;
+    background-color: #557A95; /* Bleu-gris plus doux pour les tags */
+    color: #fff;
+    padding: 3px 6px;
+    border-radius: 4px;
+    font-size: 0.7em;
+    margin-right: 5px;
+    margin-bottom: 3px;
+    text-transform: uppercase;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+/* Couleurs spécifiques pour les tags (adaptées au thème océan subtil) */
+.event-tag.exploration { background-color: #4A90E2; } /* Bleu plus clair */
+.event-tag.building { background-color: #50B89C; }     /* Vert d'eau */
+.event-tag.creative { background-color: #FFDA72; }     /* Jaune sable */
+.event-tag.redstone { background-color: #E25858; }     /* Rouge corail */
+.event-tag.community { background-color: #A27BCA; }    /* Violet clair */
+.event-tag.combat { background-color: #E2724A; }       /* Orange brûlé */
+.event-tag.parkour { background-color: #6DAAD6; }      /* Bleu azur */
+.event-tag.pvp { background-color: #B25F5F; }          /* Rouge brique doux */
+.event-tag.challenge { background-color: #E29B4A; }    /* Orange doux */
+.event-tag.reward { background-color: #8C6BB0; }       /* Mauve */
+.event-tag.fun { background-color: #FFD472; }          /* Ambre doux */
+.event-tag.end { background-color: #53023f; }   
+
+
+/* Pied de page */
+footer {
+    background-color: #1A3047; /* Bleu foncé subtil pour le pied de page */
+    color: #ffffff;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 50px;
+    border-top: 3px solid #6DD5ED;
+    font-size: 0.9em;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+a {
+    color: white;
+}
+
+/* Media Queries pour la responsivité */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+    .calendar-title {
+        font-size: 1.8em;
+    }
+    .calendar-grid {
+        gap: 5px;
+    }
+    .day {
+        min-height: 100px;
+        padding: 5px;
+    }
+    .date-number {
+        font-size: 1.2em;
+        top: 3px;
+        right: 5px;
+    }
+    .event-details {
+        margin-top: 20px;
+        font-size: 0.8em;
+    }
+    .event-tag {
+        font-size: 0.6em;
+        padding: 2px 4px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+    header p {
+        font-size: 1em;
+    }
+    .calendar-title {
+        font-size: 1.5em;
+    }
+    .day-name {
+        font-size: 0.8em;
+    }
+>>>>>>> 971c8d9080867be0b7faa6e8dbfadeed33bdceea
 }
