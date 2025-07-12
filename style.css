@@ -1,7 +1,5 @@
-/* Importation des polices Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@400;700&display=swap');
 
-/* Styles Généraux */
 body {
     font-family: 'Roboto', sans-serif;
     background: linear-gradient(to bottom, #1E3A5F, #2A4D7A, #3B6AA0); /* Dégradé de bleus océaniques plus doux */
@@ -12,7 +10,6 @@ body {
     scroll-behavior: smooth;
 }
 
-/* En-tête */
 header {
     background-color: #1A3047; /* Bleu foncé subtil pour l'en-tête */
     color: #ffffff;
@@ -38,14 +35,12 @@ header p {
     color: #bbbbbb;
 }
 
-/* Conteneur principal */
 main {
     max-width: 1200px;
     margin: 40px auto;
     padding: 20px;
 }
 
-/* Conteneur du calendrier (pour un mois) */
 .calendar-container {
     background-color: rgba(26, 48, 71, 0.8); /* Bleu foncé légèrement transparent */
     border-radius: 10px;
@@ -66,7 +61,6 @@ main {
     border-bottom: 2px dashed #6DD5ED; /* Bordure plus fine */
 }
 
-/* Grille du calendrier */
 .calendar-grid {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
@@ -135,10 +129,9 @@ main {
     line-height: 1.3;
 }
 
-/* Tags d'événements (couleurs ajustées pour le thème subtil) */
 .event-tag {
     display: inline-block;
-    background-color: #557A95; /* Bleu-gris plus doux pour les tags */
+    background-color: #557A95;
     color: #fff;
     padding: 3px 6px;
     border-radius: 4px;
@@ -150,7 +143,6 @@ main {
     white-space: nowrap;
 }
 
-/* Couleurs spécifiques pour les tags (adaptées au thème océan subtil) */
 .event-tag.exploration { background-color: #4A90E2; } /* Bleu plus clair */
 .event-tag.building { background-color: #50B89C; }     /* Vert d'eau */
 .event-tag.creative { background-color: #FFDA72; }     /* Jaune sable */
@@ -165,7 +157,6 @@ main {
 .event-tag.end { background-color: #53023f; }   
 
 
-/* --- STYLE SPÉCIFIQUE POUR L'EVENT ENDER DRAGON --- */
 .day.ender-dragon-event {
     background-image: url('images/ender_dragon_bg.png'); /* Chemin vers ton image */
     background-size: cover; /* L'image couvrira toute la surface */
@@ -177,22 +168,20 @@ main {
 }
 
 .day.ender-dragon-event .date-number {
-    color: #FFEA00; /* Un jaune plus éclatant pour le numéro du jour */
+    color: #FFEA00;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
 }
 
 .day.ender-dragon-event .event-time {
-    color: #FFEA00; /* La même couleur éclatante pour l'heure */
+    color: #FFEA00;
 }
 
-/* On peut rendre les tags légèrement plus opaques pour qu'ils ressortent mieux */
 .day.ender-dragon-event .event-tag {
-    background-color: rgba(138, 43, 226, 0.8); /* Bleu violet avec opacité */
+    background-color: rgba(138, 43, 226, 0.8);
     color: #fff;
 }
-/* --- FIN DU STYLE SPÉCIFIQUE --- */
 
-/* Pied de page */
+
 footer {
     background-color: #1A3047; /* Bleu foncé subtil pour le pied de page */
     color: #ffffff;
@@ -211,7 +200,6 @@ a {
     color: white;
 }
 
-/* Media Queries pour la responsivité */
 @media (max-width: 768px) {
     header h1 {
         font-size: 2em;
