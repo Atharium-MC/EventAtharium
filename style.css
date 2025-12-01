@@ -4,7 +4,7 @@
 /* Styles Généraux */
 body {
     font-family: 'Roboto', sans-serif;
-    background: linear-gradient(to bottom, #1E3A5F, #2A4D7A, #3B6AA0); /* Dégradé de bleus océaniques plus doux */
+    background: linear-gradient(to bottom, #5f1e1e, #7a2a2a, #a03b3b); /* Dégradé de bleus océaniques plus doux */
     color: #e0e0e0;
     margin: 0;
     padding: 0;
@@ -14,22 +14,22 @@ body {
 
 /* En-tête */
 header {
-    background-color: #1A3047; /* Bleu foncé subtil pour l'en-tête */
+    background-color: #471a1a; /* Bleu foncé subtil pour l'en-tête */
     color: #ffffff;
     padding: 40px 20px;
     text-align: center;
-    border-bottom: 3px solid #6DD5ED; /* Bordure bleu clair, comme un horizon */
+    border-bottom: 3px solid #ed6d6d; /* Bordure bleu clair, comme un horizon */
 }
 
 header h1 {
     font-family: 'Press Start 2P', cursive;
     font-size: 2.8em;
     margin-bottom: 10px;
-    text-shadow: 2px 2px #3E7CBA; /* Ombre bleue moins prononcée */
+    text-shadow: 2px 2px #ba3e3e; /* Ombre bleue moins prononcée */
 }
 
 header .server-name {
-    color: #9DE0F6; /* Bleu très clair, comme le reflet du ciel sur l'eau */
+    color: #f69d9d; /* Bleu très clair, comme le reflet du ciel sur l'eau */
 }
 
 header p {
@@ -47,23 +47,23 @@ main {
 
 /* Conteneur du calendrier (pour un mois) */
 .calendar-container {
-    background-color: rgba(26, 48, 71, 0.8); /* Bleu foncé légèrement transparent */
+    background-color: rgba(71, 26, 26, 0.8); /* Bleu foncé légèrement transparent */
     border-radius: 10px;
     padding: 30px;
     margin-bottom: 50px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.4); /* Ombre adoucie */
-    border: 1px solid rgba(157, 224, 246, 0.2); /* Bordure discrète */
+    border: 1px solid rgba(246, 157, 157, 0.2); /* Bordure discrète */
 }
 
 .calendar-title {
     font-family: 'Press Start 2P', cursive;
     font-size: 2.2em;
-    color: #6DD5ED; /* Bleu ciel pour le titre du mois */
+    color: #ed6d6d; /* Bleu ciel pour le titre du mois */
     text-align: center;
     margin-bottom: 40px;
-    text-shadow: 1px 1px #3E7CBA; /* Ombre plus douce */
+    text-shadow: 1px 1px #ba3e3e; /* Ombre plus douce */
     padding-bottom: 15px;
-    border-bottom: 2px dashed #6DD5ED; /* Bordure plus fine */
+    border-bottom: 2px dashed #ed6d6d; /* Bordure plus fine */
 }
 
 /* Grille du calendrier */
@@ -75,18 +75,18 @@ main {
 
 .day-name {
     font-family: 'Press Start 2P', cursive;
-    background-color: #3E7CBA; /* Bleu moyen pour les noms des jours */
+    background-color: #ba3e3e; /* Bleu moyen pour les noms des jours */
     padding: 10px 5px;
     text-align: center;
     font-size: 0.9em;
     border-radius: 5px;
     color: #ffffff;
-    text-shadow: 1px 1px #2B5A8C;
+    text-shadow: 1px 1px #8c2b2b;
 }
 
 .day {
-    background-color: #2D527D; /* Bleu plus clair pour les jours */
-    border: 1px solid #1E3A5F;
+    background-color: #7d2d2d; /* Bleu plus clair pour les jours */
+    border: 1px solid #5f1e1e;
     border-radius: 8px;
     min-height: 120px;
     padding: 10px;
@@ -106,18 +106,18 @@ main {
 .date-number {
     font-family: 'Press Start 2P', cursive;
     font-size: 1.5em;
-    color: #9DE0F6; /* Bleu très clair pour le numéro du jour */
+    color: #f69d9d; /* Bleu très clair pour le numéro du jour */
     position: absolute;
     top: 5px;
     right: 10px;
     z-index: 1;
-    text-shadow: 1px 1px #6DD5ED;
+    text-shadow: 1px 1px #ed6d6d;
 }
 
 .day.has-event {
-    background-color: #3E7CBA; /* Un bleu légèrement différent quand il y a un événement */
-    border: 1px solid #6DD5ED; /* Bordure bleu ciel pour les jours avec événement */
-    box-shadow: 0 0 10px rgba(109, 213, 237, 0.2); /* Légère lueur adoucie */
+    background-color: #ba3e3e; /* Un bleu légèrement différent quand il y a un événement */
+    border: 1px solid #ed6d6d; /* Bordure bleu ciel pour les jours avec événement */
+    box-shadow: 0 0 10px rgba(237, 109, 109, 0.2); /* Légère lueur adoucie */
 }
 
 .event-details {
@@ -138,7 +138,7 @@ main {
 /* Tags d'événements (couleurs ajustées pour le thème subtil) */
 .event-tag {
     display: inline-block;
-    background-color: #557A95; /* Bleu-gris plus doux pour les tags */
+    background-color: #955555; /* Bleu-gris plus doux pour les tags */
     color: #fff;
     padding: 3px 6px;
     border-radius: 4px;
@@ -153,7 +153,7 @@ main {
 /* Couleurs spécifiques pour les tags (adaptées au thème océan subtil) */
 .event-tag.annuler { background-color: #750505; }
 .event-tag.end { background-color: rgba(138, 43, 226, 0.8); }   
-
+.event-tag.noel { background-color: rgba(255, 80, 80, 0.8); }   
 
 /* --- STYLE SPÉCIFIQUE POUR L'EVENT ENDER DRAGON --- */
 .day.ender-dragon-event {
@@ -175,16 +175,36 @@ main {
     color: #FFEA00; /* La même couleur éclatante pour l'heure */
 }
 
+/* --- STYLE POUR NOËL --- */
+.day.noel {
+    background-image: url(''); /* Chemin vers ton image */
+    background-size: cover; /* L'image couvrira toute la surface */
+    background-position: center; /* Centre l'image */
+    color: #fff; /* Texte blanc pour contraster avec le fond sombre de l'image */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Ombre pour rendre le texte plus lisible */
+    border: 1px solid #db7070; /* Une bordure violette pour l'End */
+    box-shadow: 0 0 15px rgba(219, 112, 112, 0.5); /* Une lueur violette */
+}
+
+.day.noel .date-number {
+    color: #ff0000; /* Un jaune plus éclatant pour le numéro du jour */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+
+.day.noel .event-time {
+    color: #ff0000; /* La même couleur éclatante pour l'heure */
+}
+
 /* --- FIN DU STYLE SPÉCIFIQUE --- */
 
 /* Pied de page */
 footer {
-    background-color: #1A3047; /* Bleu foncé subtil pour le pied de page */
+    background-color: #471a1a; /* Bleu foncé subtil pour le pied de page */
     color: #ffffff;
     text-align: center;
     padding: 30px 20px;
     margin-top: 50px;
-    border-top: 3px solid #6DD5ED;
+    border-top: 3px solid #ed6d6d;
     font-size: 0.9em;
 }
 
